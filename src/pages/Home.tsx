@@ -84,7 +84,10 @@ export function Home() {
           </div>
 
           <div className="bg-amber-50 p-4 border border-amber-100 rounded-xl mt-2">
-            <h4 className="text-[10px] font-bold text-amber-700 uppercase tracking-widest">Legal Notice</h4>
+            <h4 className="text-[10px] font-bold text-amber-700 uppercase tracking-widest flex items-center justify-between">
+              <span>Legal Notice</span>
+              <a href="/disclaimer" className="text-[#1e3a8a] normal-case tracking-normal hover:underline">Full Disclaimer</a>
+            </h4>
             <p className="text-[11px] text-amber-800 leading-relaxed mt-2">
               Estimates only. Results depend on variables like market fuel prices and operator overhead. Verify critical decisions independently.
             </p>
