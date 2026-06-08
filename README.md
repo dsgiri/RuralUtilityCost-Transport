@@ -1,20 +1,67 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Rural Utility Cost - Transport Hub
 
-# Run and deploy your AI Studio app
+**Domain:** [transport.ruralutilitycost.com](https://transport.ruralutilitycost.com)
+**Repository:** [dsgiri/RuralUtilityCost-Transport](https://github.com/dsgiri/RuralUtilityCost-Transport)
 
-This contains everything you need to run your app locally.
+The Transport Hub (`transport.ruralutilitycost.com`) is a specialized logistics and planning application within the Rural Utility Cost ecosystem. It provides practical estimators and calculators to help agricultural and rural operators manage hauling costs, fuel use, delivery routes, and mileage.
 
-View your app in AI Studio: https://ai.studio/apps/a593b48e-f7c7-447c-b930-7f33e70c7fcf
+## Features
 
-## Run Locally
+- **Hauling Cost Calculator**: Estimate total freight costs based on weight, distance, and rates.
+- **Mileage Cost Estimator**: Calculate true cost per mile driven considering fuel, maintenance, and wear.
+- **Fuel Use Calculator**: Project fuel consumption based on load weight and terrain.
+- **Delivery Route Planner**: Optimize the sequence of agricultural drop-offs.
+- **Route Cost Comparison Tool**: Compare multiple potential routes.
+- **Load Planning & Empty Miles Reduction**: Maximize payload efficiency and strategize backhauls.
 
-**Prerequisites:**  Node.js
+## Development Setup
 
+This project uses React, TypeScript, Vite, and Tailwind CSS.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Prerequisites
+- Node.js 18+
+
+### Install Dependencies
+```bash
+npm install
+```
+
+### Run Locally
+```bash
+npm run dev
+```
+The app will be available at `http://localhost:3000`.
+
+### Build for Production
+```bash
+npm run build
+```
+This command compiles TypeScript and builds the Vite application into the `dist/` folder.
+
+## Environment Variables
+
+Copy the `.env.example` file to `.env` to configure your local test environment:
+```bash
+cp .env.example .env
+```
+Ensure `APP_URL` is configured for deployment if specific absolute linking is required.
+
+## Legal Configuration
+
+The application centralizes its About, Contact, Privacy, Terms, and Disclaimer pages back to the master domain. For local development, these link to placeholder local views. To switch to production canonical links, toggle `USE_LOCAL_PREVIEW` in `src/config/legal.ts` to `false`.
+
+## Related Rural Utility Cost Links
+
+- [Master Website](https://ruralutilitycost.com)
+- [Ecosystem Portfolio](https://ruralutilitycost.com/portfolio)
+- [Transport GitHub Repository](https://github.com/dsgiri/RuralUtilityCost-Transport)
+
+**Related Subdomains:**
+- [Plan](https://plan.ruralutilitycost.com)
+- [Forecast](https://forecast.ruralutilitycost.com)
+- [Predictor](https://predictor.ruralutilitycost.com)
+- [What-If](https://whatif.ruralutilitycost.com)
+
+---
+
+*Disclaimer: All calculators in this application are strictly for informational and decision-support purposes and do not constitute professional logistical or financial advice.*

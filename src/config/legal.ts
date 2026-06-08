@@ -1,4 +1,4 @@
-export const USE_LOCAL_PREVIEW = true; // Toggle this to false in production to use the canonical main domain URLs
+export const USE_LOCAL_PREVIEW = false; // Set to false to enforce canonical main domain URLs on subdomains
 
 export const LEGAL_CONFIG = {
   about: USE_LOCAL_PREVIEW ? "/about" : "https://ruralutilitycost.com/about",
