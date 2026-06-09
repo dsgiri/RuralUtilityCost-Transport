@@ -50,6 +50,11 @@ Ensure `APP_URL` is configured for deployment if specific absolute linking is re
 
 The application centralizes its About, Contact, Privacy, Terms, and Disclaimer pages back to the master domain. For local development, these link to placeholder local views. To switch to production canonical links, toggle `USE_LOCAL_PREVIEW` in `src/config/legal.ts` to `false`.
 
+## Project Management Artifacts
+
+- **[AGENTS.md](./AGENTS.md)**: System instructions and ecosystem constraints for AI coding agents.
+- **[CALCULATOR-STANDARD.md](./CALCULATOR-STANDARD.md)**: Design and architectural standards for new calculator tools.
+
 ## Related Rural Utility Cost Links
 
 - [Master Website](https://ruralutilitycost.com)
